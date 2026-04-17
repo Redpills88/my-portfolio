@@ -1,2 +1,6 @@
-# my-portfolio
-My personal portfolio 
+# My Portfolio
+
+Welcome! This is my personal portfolio website.
+
+## About Me
+I'm learning web development and Git.
