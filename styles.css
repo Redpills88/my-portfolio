@@ -170,6 +170,17 @@ footer {
   font-size: 0.85rem;
 }
 
+.footer-link {
+  color: #a0724f;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #7a3b1e;
+}
+
 /* Mobile */
 @media (max-width: 480px) {
   header {
