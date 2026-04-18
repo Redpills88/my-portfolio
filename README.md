@@ -8,3 +8,5 @@ I'm learning web development and Git.
 - HTML & CSS basics
 - JavaScript fundamentals
 - Git & GitHub workflow
+## Future Features
+- Dark mode (see #1)
