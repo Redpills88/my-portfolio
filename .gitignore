@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
+
+# Local environment files
+.env
+.env.local
+
+# Logs
+*.log
+
+# Dependencies (if you add JavaScript later)
+node_modules/
+
+# Build output
+dist/
+build/
