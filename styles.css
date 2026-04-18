@@ -1,0 +1,186 @@
+/* Reset & base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #fdf6ec;
+  color: #2c1a0e;
+  line-height: 1.6;
+}
+
+/* Layout */
+.container {
+  width: 90%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ── Animations ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+header .name    { animation: fadeUp 0.6s ease both; }
+header h1       { animation: fadeUp 0.6s ease 0.15s both; }
+header .tagline { animation: fadeUp 0.6s ease 0.3s both; }
+
+main section {
+  animation: fadeUp 0.6s ease both;
+}
+main section:nth-child(1) { animation-delay: 0.35s; }
+main section:nth-child(2) { animation-delay: 0.5s; }
+main section:nth-child(3) { animation-delay: 0.65s; }
+
+/* Header */
+header {
+  background: #7a3b1e;
+  color: #fdf6ec;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+header .name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #fdf6ec;
+  line-height: 1.1;
+}
+
+header h1 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #e8c4a0;
+  margin-top: 0.6rem;
+}
+
+header .tagline {
+  margin-top: 1rem;
+  color: #c9956d;
+  font-size: 1.05rem;
+}
+
+/* Main sections */
+main {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+section {
+  background: #fff8f0;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(122, 59, 30, 0.08);
+  border: 1px solid #f0dece;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  color: #7a3b1e;
+  border-bottom: 2px solid #f0dece;
+  padding-bottom: 0.5rem;
+}
+
+section p {
+  color: #4a2c1a;
+  font-size: 1rem;
+}
+
+/* Skills cards */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.skill-card {
+  background: #fdf6ec;
+  border: 1px solid #f0dece;
+  border-radius: 8px;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(122, 59, 30, 0.12);
+}
+
+.skill-icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.skill-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #7a3b1e;
+  margin-bottom: 0.35rem;
+}
+
+.skill-card p {
+  font-size: 0.85rem;
+  color: #7a5c47;
+}
+
+/* Social links */
+.social-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.social-link {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  background: #7a3b1e;
+  color: #fdf6ec;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.social-link:hover {
+  background: #5c2c14;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: #a0724f;
+  font-size: 0.85rem;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  header {
+    padding: 3.5rem 0;
+  }
+
+  header .name {
+    font-size: 2.5rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+}
