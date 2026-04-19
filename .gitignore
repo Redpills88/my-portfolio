@@ -1,11 +1,24 @@
-# OS
+# macOS
 .DS_Store
-Thumbs.db
 
-# Editor
+# Windows
+Thumbs.db
+desktop.ini
+
+# Editors
 .vscode/
 .idea/
 
-# Env
+# Local environment files
 .env
 .env.local
+
+# Logs
+*.log
+
+# Dependencies (if you add JavaScript later)
+node_modules/
+
+# Build output
+dist/
+build/
